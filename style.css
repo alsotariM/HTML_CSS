@@ -71,21 +71,21 @@ header{
 }
 
 .mid-section .mic{
-    display: flex;
     width: 30px;
     height: 30px;
     border-radius: 50px;
     background-color: #f9f9f9;
+    display: flex;
     justify-content: center; <!-- لضبط المنتصف أفقيا  -->
     align-items: center; <!-- لضبط المنتصف عموديا  -->
     margin-left: 10px;
     cursor: pointer;
 }
 .right-section{
-//    display: flex;
-//    position: relative;
-//    left: 400px;
-//    justify-content: right;
+    display: flex;
+    position: relative;
+    left: 400px;
+    justify-content: right;
 }
 .right-section a{
     color: black;
