@@ -255,15 +255,21 @@ main{
 
 }
 
-.video-creater, .title span{
+.video-creater{
+    color: green;
+    font-size: 1.2rem;
+}
+
+.video-creater:hover{
+    color: red;
+}
+.creater-span{
     color: rgb(96,96,96);
     font-size: 1.4rem;
     line-height: 2rem;
     font-weight: 400;
 }
 
-.video-creater:hover{
-<!-- نغير لون الخط في حالة الضغط على السطر -->
-    color: red;
-}
+
+
 
