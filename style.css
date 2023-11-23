@@ -176,8 +176,8 @@ hr{
 }
 
 main{
-    width: 1640px;
-    height: 100%;
+    width: auto;
+    height: auto;
     padding: 35px 15px;
     border-top: 1px solid #ddd;
     overflow-y: auto;
@@ -241,10 +241,18 @@ main{
     font-weight: 500;
     line-height: 2.2rem;
     margin-bottom: 4px;
-    overflow: hidden; <!-- في حالة كان العنوان طويل يتم تنزيل الباقي إلى السطر الثالي حتى لا يخرج من الإطار المحدد -->
+    /*
+   -webkit-line-clamp CSS property
+    allows limiting of the contents
+    of a block to the specified number of lines.
+    Die Reihenfolge muss berücksichtigt werden
+     */
     display:-webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden; <!-- في حالة كان العنوان طويل يتم تنزيل الباقي إلى السطر الثالي حتى لا يخرج من الإطار المحدد -->
+
+
 }
 
 .video-creater, .title span{
