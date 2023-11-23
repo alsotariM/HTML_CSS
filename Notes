@@ -1,3 +1,79 @@
+Complated 100%
+
+# i used the google fonts and icons 
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+* How to use in comands  <i class="material-icons logo">menu</i> <!-- to use the menu symble from google-->
+
+
+#CSS property
+
+- border-radius: 4px 0 0 4px; radius in all corner but when we can edit 4 corners (10px 10px 10px 10px)
+
+- .mid-section button:hover{  نسخدمها لوضع تأثر على الزر عند الوقوف عليه يتغير اللون  
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+    
+- display: flex;
+    justify-content: center; <!-- لضبط المنتصف أفقيا  -->
+    align-items: center; <!-- لضبط المنتصف عموديا  -->
+    margin-left: 10px;
+    cursor: pointer;
+
+- to remove the line ander link:-
+    text-decoration: none;  بما أنها لينك او مسار فيوجد في الحالة الطبيعية خط من الأسفل وبهذا الأمر يتم إزالته 
+
+-
+    overflow: auto;  في حالة كانت القائمة اطول من الكونتينر فسوف يخفي العناصر من الأسفل ويظهر السكرولرو 
+
+- flex-direction: column; <!-- هذه نستخدمها حتى نغير اتجاه القائمة من افقي إلى عمودي -->
+    margin: 15px 0;
+    padding-right: 15px;<!-- هذه وضعناها لجعل فاصل صغير بين القائمة ومربع الرئيسي الخاص بالفيديوهات  -->
+
+
+- justify-content: space-around; تترك مسافيه حول العنصر بالكامل  
+
+#    #############################################################################################
+     وظيفتها أنه في حالة تصغير الشاشة سوف ينزل العناصر الزيادة إلى السطر الثاني
+ وفي حالة عدم وجودها سوف يعمل shrink للصور ويحاول يصغرهم
+ حتى يبقوا على نفس السطر ويصبح في تداخل
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;  تترك مسافه حول العنصر بالكامل  
+
+------------------------------------------------------------------------------------------------------
+- flex-direction: column;  حتى نجعل الرابط والبيانات بشكل عمودي تحت بعض  
+
+
+------------------------------------------------------------------------------------------------------
+-webkit-line-clamp CSS property
+- text-transform: uppercase; <!-- to change the alphabets to uppercase  -->
+
+
+------------------------------------------------------------------------------------------------------
+
+ /*
+   -webkit-line-clamp CSS property
+    allows limiting of the contents
+    of a block to the specified number of lines.
+    Die Reihenfolge muss berücksichtigt werden
+     */
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;  في حالة كان العنوان طويل يتم تنزيل الباقي إلى السطر الثالي حتى لا يخرج من الإطار المحدد 
+    
+    
+------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 سوف نجعل الهيدر مقسم ل 3 أجزاء
 جزء اليسار يحتوي على القائمة وعلامة اليوتيوب
 جزء الوسط يحتوي على خيارات البحث
